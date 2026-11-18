@@ -31,8 +31,8 @@ Crio **sistemas completos de ponta a ponta**: interface, API, banco de dados, in
 ## Atividade
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GustavoViti/GustavoViti/output/github-snake-dark.svg" />
-  <img src="https://raw.githubusercontent.com/GustavoViti/GustavoViti/output/github-snake.svg" width="100%" alt="Contribuições no GitHub" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GustavoViti/gustavoviti/output/github-snake-dark.svg" />
+  <img src="https://raw.githubusercontent.com/GustavoViti/gustavoviti/output/github-snake.svg" width="100%" alt="Contribuições no GitHub" />
 </picture>
 
 <br/>
