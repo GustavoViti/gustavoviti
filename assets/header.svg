@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-label="Gustavo Viti — sistemas completos, do banco de dados à tela final. SaaS, sistemas sob medida e automações com IA."><title>Gustavo Viti — sistemas completos, do banco de dados à tela final. SaaS, sistemas sob medida e automações com IA.</title>
+  <defs>
+    <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#2a9be2" stroke-opacity="0.07"/></pattern>
+    <radialGradient id="glow" cx="78%" cy="45%" r="45%">
+      <stop offset="0" stop-color="#2a9be2" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#2a9be2" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fade" x1="0" x2="1">
+      <stop offset="0" stop-color="#0a0f1e" stop-opacity=".2"/>
+      <stop offset=".55" stop-color="#0a0f1e" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="clip"><rect width="1200" height="380" rx="24"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="380" fill="#0a0f1e"/>
+    <rect width="1200" height="380" fill="url(#g)"/>
+    <rect width="1200" height="380" fill="url(#glow)">
+      <animate attributeName="opacity" values=".7;1;.7" dur="6s" repeatCount="indefinite"/>
+    </rect>
+    <rect width="1200" height="380" fill="url(#fade)"/>
+
+    <rect x="64" y="52" width="326" height="36" rx="18" fill="#22c55e" fill-opacity=".1" stroke="#22c55e" stroke-opacity=".35"/>
+    <circle cx="86" cy="70" r="5" fill="#22c55e"/>
+    <circle cx="86" cy="70" r="5" fill="none" stroke="#22c55e">
+      <animate attributeName="r" values="5;13" dur="1.8s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values=".8;0" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="104" y="75" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" letter-spacing="1.2" fill="#22c55e">AGENDA ABERTA PARA NOVOS PROJETOS</text>
+
+    <text x="62" y="168" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="72" font-weight="700" letter-spacing="-1.5" fill="#ffffff">Gustavo Viti</text>
+    <text x="64" y="218" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="28" font-weight="500" fill="#a9d8f8">Do banco de dados à tela final.</text>
+    <text x="64" y="256" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="19" fill="#c6d0e0">SaaS, sistemas sob medida e automações com IA.</text>
+    <rect x="64" y="296" width="50" height="30" rx="15" fill="#12233f" stroke="#1f3a60"/><text x="89" y="315.9" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" fill="#a9d8f8">Web</text><rect x="122" y="296" width="85" height="30" rx="15" fill="#12233f" stroke="#1f3a60"/><text x="164.5" y="315.9" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" fill="#a9d8f8">Desktop</text><rect x="215" y="296" width="76" height="30" rx="15" fill="#12233f" stroke="#1f3a60"/><text x="253" y="315.9" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" fill="#a9d8f8">Mobile</text><rect x="299" y="296" width="137" height="30" rx="15" fill="#12233f" stroke="#1f3a60"/><text x="367.5" y="315.9" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" fill="#a9d8f8">WhatsApp + IA</text>
+
+    <line x1="970" y1="126" x2="970" y2="158" stroke="#2a9be2" stroke-opacity=".4" stroke-dasharray="3 4"/><circle cx="960" cy="126" r="3" fill="#a9d8f8"><animate attributeName="cy" values="126;158" dur="1.2s" begin="0s" repeatCount="indefinite"/></circle><circle cx="980" cy="158" r="3" fill="#22c55e"><animate attributeName="cy" values="158;126" dur="1.2s" begin="0.3s" repeatCount="indefinite"/></circle><line x1="970" y1="222" x2="970" y2="254" stroke="#2a9be2" stroke-opacity=".4" stroke-dasharray="3 4"/><circle cx="960" cy="222" r="3" fill="#a9d8f8"><animate attributeName="cy" values="222;254" dur="1.2s" begin="0.6s" repeatCount="indefinite"/></circle><circle cx="980" cy="254" r="3" fill="#22c55e"><animate attributeName="cy" values="254;222" dur="1.2s" begin="0.8999999999999999s" repeatCount="indefinite"/></circle>
+    
+    <g>
+      <rect x="800" y="62" width="340" height="64" rx="14" fill="#0f1830" stroke="#2a9be2" stroke-opacity=".25" stroke-width="1.5">
+        <animate attributeName="stroke-opacity" values=".25;1;.25;.25" keyTimes="0;.15;.4;1" dur="3.6s" begin="0s" repeatCount="indefinite"/>
+      </rect>
+      <text x="824" y="101" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" fill="#2a9be2">01</text>
+      <text x="862" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="20" font-weight="600" fill="#ffffff">Interface</text>
+      <text x="862" y="112" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#7f8ea8">React · PWA · Electron</text>
+    </g>
+    <g>
+      <rect x="800" y="158" width="340" height="64" rx="14" fill="#0f1830" stroke="#2a9be2" stroke-opacity=".25" stroke-width="1.5">
+        <animate attributeName="stroke-opacity" values=".25;1;.25;.25" keyTimes="0;.15;.4;1" dur="3.6s" begin="1.2s" repeatCount="indefinite"/>
+      </rect>
+      <text x="824" y="197" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" fill="#2a9be2">02</text>
+      <text x="862" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="20" font-weight="600" fill="#ffffff">API e integrações</text>
+      <text x="862" y="208" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#7f8ea8">Node · IA · WhatsApp</text>
+    </g>
+    <g>
+      <rect x="800" y="254" width="340" height="64" rx="14" fill="#0f1830" stroke="#2a9be2" stroke-opacity=".25" stroke-width="1.5">
+        <animate attributeName="stroke-opacity" values=".25;1;.25;.25" keyTimes="0;.15;.4;1" dur="3.6s" begin="2.4s" repeatCount="indefinite"/>
+      </rect>
+      <text x="824" y="293" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" fill="#2a9be2">03</text>
+      <text x="862" y="284" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="20" font-weight="600" fill="#ffffff">Banco de dados</text>
+      <text x="862" y="304" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#7f8ea8">PostgreSQL · RLS</text>
+    </g>
+  </g>
+  <rect x=".5" y=".5" width="1199" height="379" rx="24" fill="none" stroke="#1d3150"/>
+  </svg>

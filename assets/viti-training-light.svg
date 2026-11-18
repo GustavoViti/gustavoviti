@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="320" viewBox="0 0 580 320" role="img" aria-label="Viti Training — SaaS para academias e personais. App instalável para alunos, painel de gestão, financeiro e plano alimentar com IA. Cada cliente com a própria marca e dados isolados."><title>Viti Training — SaaS para academias e personais. App instalável para alunos, painel de gestão, financeiro e plano alimentar com IA. Cada cliente com a própria marca e dados isolados.</title>
+  <defs>
+    <clipPath id="clip"><rect width="580" height="320" rx="20"/></clipPath>
+    <linearGradient id="bar" x1="0" x2="1">
+      <stop offset="0" stop-color="#0b6db3"/><stop offset=".5" stop-color="#1878bd"/><stop offset="1" stop-color="#0b6db3"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0;1 0" dur="4s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="580" height="320" fill="#ffffff"/>
+    <rect width="580" height="4" fill="url(#bar)"/>
+    <text x="552" y="236" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="150" font-weight="800" letter-spacing="-6" fill="#0b6db3" fill-opacity="0.07">VT</text>
+    <text x="32" y="50" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" letter-spacing="1.4" fill="#0b6db3">PRODUTO PRÓPRIO · SAAS FITNESS</text>
+    <circle cx="536" cy="46" r="18" fill="#e8f3fc" stroke="#cfe4f6"/>
+    <path d="M530 52 L542 40 M533 40 H542 V49" fill="none" stroke="#0b6db3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="32" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="32" font-weight="700" letter-spacing="-.5" fill="#0a0f1e">Viti Training</text>
+    <text x="32" y="124" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="17" font-weight="500" fill="#1878bd">SaaS para academias e personais</text>
+    <text x="32" y="170" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="17" fill="#3b4a62">App instalável para alunos, painel de gestão,</text><text x="32" y="195" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="17" fill="#3b4a62">financeiro e plano alimentar com IA. Cada cliente</text><text x="32" y="220" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="17" fill="#3b4a62">com a própria marca e dados isolados.</text>
+    <rect x="32" y="258" width="48" height="28" rx="14" fill="#e8f3fc" stroke="#cfe4f6"/><text x="56" y="276.55" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#0b6db3">PWA</text><rect x="88" y="258" width="80" height="28" rx="14" fill="#e8f3fc" stroke="#cfe4f6"/><text x="128" y="276.55" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#0b6db3">Node.js</text><rect x="176" y="258" width="105" height="28" rx="14" fill="#e8f3fc" stroke="#cfe4f6"/><text x="228.5" y="276.55" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#0b6db3">PostgreSQL</text><rect x="289" y="258" width="121" height="28" rx="14" fill="#e8f3fc" stroke="#cfe4f6"/><text x="349.5" y="276.55" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#0b6db3">Multi-tenant</text>
+  </g>
+  <rect x=".5" y=".5" width="579" height="319" rx="20" fill="none" stroke="#d6e4f2"/>
+  </svg>

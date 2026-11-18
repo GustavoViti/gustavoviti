@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="320" viewBox="0 0 580 320" role="img" aria-label="Ferreira Repasse — Sistema para revenda de veículos. Site pronto para o Google, cadastro pelo celular, anúncio gerado a partir da foto do carro e controle de vendas com troca."><title>Ferreira Repasse — Sistema para revenda de veículos. Site pronto para o Google, cadastro pelo celular, anúncio gerado a partir da foto do carro e controle de vendas com troca.</title>
+  <defs>
+    <clipPath id="clip"><rect width="580" height="320" rx="20"/></clipPath>
+    <linearGradient id="bar" x1="0" x2="1">
+      <stop offset="0" stop-color="#2a9be2"/><stop offset=".5" stop-color="#a9d8f8"/><stop offset="1" stop-color="#2a9be2"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0;1 0" dur="4s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="580" height="320" fill="#0a0f1e"/>
+    <rect width="580" height="4" fill="url(#bar)"/>
+    <text x="552" y="236" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="150" font-weight="800" letter-spacing="-6" fill="#2a9be2" fill-opacity="0.06">FR</text>
+    <text x="32" y="50" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" letter-spacing="1.4" fill="#2a9be2">SOB MEDIDA · REVENDA DE VEÍCULOS</text>
+    <circle cx="536" cy="46" r="18" fill="#12233f" stroke="#1f3a60"/>
+    <path d="M530 52 L542 40 M533 40 H542 V49" fill="none" stroke="#2a9be2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="32" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="32" font-weight="700" letter-spacing="-.5" fill="#ffffff">Ferreira Repasse</text>
+    <text x="32" y="124" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="17" font-weight="500" fill="#a9d8f8">Sistema para revenda de veículos</text>
+    <text x="32" y="170" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="17" fill="#c6d0e0">Site pronto para o Google, cadastro pelo celular,</text><text x="32" y="195" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="17" fill="#c6d0e0">anúncio gerado a partir da foto do carro e</text><text x="32" y="220" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="17" fill="#c6d0e0">controle de vendas com troca.</text>
+    <rect x="32" y="258" width="48" height="28" rx="14" fill="#12233f" stroke="#1f3a60"/><text x="56" y="276.55" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#a9d8f8">PWA</text><rect x="88" y="258" width="80" height="28" rx="14" fill="#12233f" stroke="#1f3a60"/><text x="128" y="276.55" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#a9d8f8">Node.js</text><rect x="176" y="258" width="80" height="28" rx="14" fill="#12233f" stroke="#1f3a60"/><text x="216" y="276.55" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#a9d8f8">MariaDB</text><rect x="264" y="258" width="72" height="28" rx="14" fill="#12233f" stroke="#1f3a60"/><text x="300" y="276.55" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#a9d8f8">Docker</text>
+  </g>
+  <rect x=".5" y=".5" width="579" height="319" rx="20" fill="none" stroke="#1d3150"/>
+  </svg>
