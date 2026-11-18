@@ -138,7 +138,7 @@ function card(s, t) {
   <g clip-path="url(#bar)">${bar}</g>
   ${legend}
   <text x="${W - 32}" y="${H - 18}" text-anchor="end" font-family="${MONO}" font-size="11" fill="${t.muted}">atualizado em ${new Date().toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo' })}</text>
-  `, `Atividade no GitHub: ${s.contributions} contribuições em 12 meses, sequência atual de ${s.current} dias, maior sequência de ${s.longest} dias. Linguagens: ${s.langs.map((l) => `${l.name} ${l.pct.toFixed(1)}%`).join(', ')}.`);
+  `, `Atividade no GitHub: ${s.contributions} contribuições em 12 meses, sequência atual de ${metrics[1][0]}, maior sequência de ${metrics[2][0]}. Linguagens: ${s.langs.map((l) => `${l.name} ${l.pct.toFixed(1)}%`).join(', ')}.`);
 }
 
 const data = mock ? mockData() : await fetchData();
