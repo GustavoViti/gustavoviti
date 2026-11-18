@@ -1,27 +1,80 @@
-# 💫 About Me:
-👋 Gustavo | Fullstack & Mobile Developer<br><br>Desenvolvedor **Fullstack e Mobile**, focado em criar aplicações **eficientes, escaláveis e com design bem pensado**.<br><br>💻 Trabalhando com desenvolvimento web e mobile desde 2020.<br><br>🛠️ Stack principal:<br>- JavaScript | Node.js<br>- HTML | CSS<br>- Firebase | MySQL | Back4App<br>- Android Development<br><br>🎯 Objetivo:<br>Construir soluções reais, aprender continuamente e evoluir como profissional na área de tecnologia.<br>
+<div align="center">
 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0f1e,100:2a9be2&height=180&section=header&text=Gustavo%20Viti&fontColor=ffffff&fontSize=46&fontAlignY=38&desc=Sistemas%20completos%20%C2%B7%20SaaS%20%C2%B7%20Automa%C3%A7%C3%B5es%20com%20IA&descAlignY=60&descSize=16" width="100%" alt="Gustavo Viti" />
 
-## 🌐 Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/gustavo_viti_dev) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/gustavoviti) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:gustavoviti543@gmail.com) 
+<img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=500&size=20&duration=3000&pause=900&color=2A9BE2&center=true&vCenter=true&width=560&lines=Do+banco+de+dados+%C3%A0+tela+final.;Produtos+pr%C3%B3prios+rodando+em+neg%C3%B3cios+reais.;WhatsApp+%2B+IA+trabalhando+pela+sua+opera%C3%A7%C3%A3o.;Agenda+aberta+para+novos+projetos." alt="Do banco de dados à tela final" />
 
-# 💻 Tech Stack:
-![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![Electron.js](https://img.shields.io/badge/Electron-191970?style=for-the-badge&logo=Electron&logoColor=white) ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=GustavoViti&theme=synthwave&hide_border=true&include_all_commits=false&count_private=false)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=GustavoViti&theme=synthwave&hide_border=true)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=GustavoViti&theme=synthwave&hide_border=true&include_all_commits=false&count_private=false&layout=compact)
+<a href="https://gustavoviti.vercel.app/"><img src="https://img.shields.io/badge/Portfólio-gustavoviti.vercel.app-2a9be2?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfólio" /></a>
+<a href="https://wa.me/5519995780101?text=Ol%C3%A1%20Gustavo!%20Vi%20seu%20GitHub%20e%20quero%20pedir%20um%20or%C3%A7amento."><img src="https://img.shields.io/badge/Pedir%20orçamento-WhatsApp-22c55e?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" /></a>
 
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=GustavoViti&theme=shades-of-purple&no-frame=false&no-bg=false&margin-w=4)
-
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
-
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=GustavoViti&limit=5&theme=dark&combine_all_yearly_contributions=true)
+</div>
 
 ---
-[![](https://visitcount.itsvg.in/api?id=GustavoViti&icon=8&color=1)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+### 👋 Oi, eu sou o Gustavo
+
+Crio **sistemas completos de ponta a ponta**: interface, API, banco de dados, integrações e publicação. Quem me contrata fala com uma pessoa só, da primeira conversa ao sistema no ar.
+
+Além dos projetos sob medida, desenvolvo **meus próprios produtos**, usados todos os dias por outros negócios. É dessa operação real que vem o cuidado com o que importa: dados isolados por cliente, permissões por perfil e uma base pronta para crescer.
+
+```js
+const gustavo = {
+  faz:      ["Sistemas sob medida", "SaaS multi-tenant", "Automações com IA e WhatsApp"],
+  entrega:  "do banco de dados à tela final",
+  plataformas: ["web", "desktop", "mobile"],
+  desde:    2020,
+  status:   "agenda aberta 🟢",
+};
+```
+
+---
+
+### 🚀 Produtos e sistemas no ar
+
+| | Projeto | O que faz |
+|:-:|---|---|
+| 🚗 | **[Turbo Dealer](https://turbo-dealers.vercel.app)**<br><sub>Plataforma para repasses de veículos</sub> | Captura carros dos grupos de WhatsApp, escreve o anúncio com IA, elimina duplicados e mostra quais clientes procuram cada carro.<br><sub>`Electron` `React` `TypeScript` `PostgreSQL` `Gemini`</sub> |
+| 💪 | **[Viti Training](https://www.vititraining.com.br/landingpage/)**<br><sub>SaaS para academias e personais</sub> | App instalável para alunos, painel de gestão, financeiro e plano alimentar com IA. Cada cliente com a própria marca e dados isolados.<br><sub>`PWA` `Node.js` `PostgreSQL` `Multi-tenant`</sub> |
+| 🏷️ | **[Ferreira Repasse](https://ferreira-repasse-frontend.vercel.app)**<br><sub>Sistema para revenda de veículos</sub> | Site pronto para o Google, cadastro pelo celular, anúncio gerado a partir da foto do carro e controle de vendas com troca.<br><sub>`PWA` `Node.js` `MariaDB` `Docker`</sub> |
+| 🎙️ | **Vitium**<br><sub>Assistente de IA por voz</sub> | Transcreve a fala localmente, executa tarefas com o Claude Code e guarda o que aprende numa memória de longo prazo.<br><sub>`Electron` `React` `Whisper` `Claude Code`</sub> |
+
+<sub>Os produtos acima têm código privado. Quer ver funcionando? <a href="https://wa.me/5519995780101">Me chama</a> que eu mostro.</sub>
+
+**Repositórios abertos:** [Nexus](https://github.com/GustavoViti/Nexus) · [Kaisen](https://github.com/GustavoViti/kaisen) · [Imperios Burger](https://github.com/GustavoViti/Imperios-Burger-APP)
+
+---
+
+### 🛠️ Stack
+
+<p>
+  <img src="https://skillicons.dev/icons?i=ts,js,react,vite,tailwind,html,css&theme=dark" alt="Frontend" /><br/>
+  <img src="https://skillicons.dev/icons?i=nodejs,express,postgres,supabase,mysql,firebase&theme=dark" alt="Backend e dados" /><br/>
+  <img src="https://skillicons.dev/icons?i=electron,flutter,dart,docker,nginx,linux,vercel,git&theme=dark" alt="Desktop, mobile e infra" />
+</p>
+
+**IA e automação:** Gemini · Groq · Whisper · Claude Code · Baileys (WhatsApp)
+
+---
+
+### 📊 Atividade
+
+<div align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=GustavoViti&show_icons=true&hide_border=true&bg_color=0a0f1e&title_color=2a9be2&icon_color=2a9be2&text_color=ffffff&hide_rank=false" alt="GitHub stats" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GustavoViti&layout=compact&hide_border=true&bg_color=0a0f1e&title_color=2a9be2&text_color=ffffff" alt="Linguagens" />
+</div>
+
+---
+
+<div align="center">
+
+**Tem um processo que dá trabalho demais ou um sistema que ainda está no papel?**<br/>
+Me conta o problema que eu te mostro como resolver.
+
+<a href="https://gustavoviti.vercel.app/"><img src="https://img.shields.io/badge/Portfólio-0a0f1e?style=flat-square&logo=googlechrome&logoColor=2a9be2" alt="Portfólio" /></a>
+<a href="https://www.linkedin.com/in/gustavoviti/"><img src="https://img.shields.io/badge/LinkedIn-0a0f1e?style=flat-square&logo=linkedin&logoColor=2a9be2" alt="LinkedIn" /></a>
+<a href="https://www.instagram.com/gustavo__viti/"><img src="https://img.shields.io/badge/Instagram-0a0f1e?style=flat-square&logo=instagram&logoColor=2a9be2" alt="Instagram" /></a>
+<a href="mailto:gustavovitidev@gmail.com"><img src="https://img.shields.io/badge/Email-0a0f1e?style=flat-square&logo=gmail&logoColor=2a9be2" alt="Email" /></a>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2a9be2,100:0a0f1e&height=100&section=footer" width="100%" alt="" />
+
+</div>
