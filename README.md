@@ -24,11 +24,36 @@ Crio **sistemas completos de ponta a ponta**: interface, API, banco de dados, in
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/process-dark.svg" /><img src="assets/process-light.svg" width="100%" alt="1. Entendo o problema. 2. Defino a solução. 3. Desenvolvo por etapas. 4. Coloco no ar." /></picture>
 
+## Por baixo do capô
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/architecture-dark.svg" /><img src="assets/architecture-light.svg" width="100%" alt="Arquitetura: clientes PWA, desktop Electron e mobile Flutter conectados a uma API Node.js com REST, WebSocket, autenticação e permissões; PostgreSQL com Row Level Security; integrações com WhatsApp e IA; rodando em VPS Linux com Docker, Nginx e PM2." /></picture>
+
+<details>
+<summary><b>Decisões técnicas que se repetem nos meus sistemas</b></summary>
+<br/>
+
+- **Multi-tenant de verdade:** isolamento por cliente no próprio banco com Row Level Security no PostgreSQL, não só um `WHERE tenant_id` na aplicação.
+- **Permissões por perfil:** cada função enxerga e altera só o que precisa.
+- **PWA instalável:** um código só para web e celular, com notificações via Web Push e FCM.
+- **IA aplicada ao processo:** geração de anúncios e textos com Gemini e Groq, transcrição local com Whisper.
+- **WhatsApp como canal:** automações com Baileys para captar e distribuir informação onde o cliente já está.
+- **Deploy próprio:** VPS Linux com Docker, Nginx e PM2; front estático na Vercel.
+
+</details>
+
 ## Stack
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg" /><img src="assets/stack-light.svg" width="100%" alt="Frontend: TypeScript, React, PWA. Backend: Node.js, PostgreSQL, Supabase. IA: Gemini, Whisper, Claude Code. Infra: Electron, Flutter, Docker, Linux." /></picture>
+| | |
+|---|---|
+| **Frontend** | <img src="https://skillicons.dev/icons?i=ts,js,react,vite,tailwind,html,css&theme=dark" height="40" alt="TypeScript, JavaScript, React, Vite, Tailwind, HTML, CSS" /> |
+| **Backend e dados** | <img src="https://skillicons.dev/icons?i=nodejs,express,postgres,supabase,mysql,firebase&theme=dark" height="40" alt="Node.js, Express, PostgreSQL, Supabase, MySQL, Firebase" /> |
+| **Desktop e mobile** | <img src="https://skillicons.dev/icons?i=electron,flutter,dart&theme=dark" height="40" alt="Electron, Flutter, Dart" /> |
+| **Infra** | <img src="https://skillicons.dev/icons?i=linux,docker,nginx,vercel,git,github&theme=dark" height="40" alt="Linux, Docker, Nginx, Vercel, Git, GitHub" /> |
+| **IA e automação** | ![Gemini](https://img.shields.io/badge/Gemini-0a0f1e?style=for-the-badge&logo=googlegemini&logoColor=8E75B2) ![Claude Code](https://img.shields.io/badge/Claude%20Code-0a0f1e?style=for-the-badge&logo=claude&logoColor=D97757) ![Groq](https://img.shields.io/badge/Groq-0a0f1e?style=for-the-badge) ![Whisper](https://img.shields.io/badge/Whisper-0a0f1e?style=for-the-badge) ![WhatsApp](https://img.shields.io/badge/Baileys%20·%20WhatsApp-0a0f1e?style=for-the-badge&logo=whatsapp&logoColor=25D366) |
 
 ## Atividade
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GustavoViti/gustavoviti/output/stats-dark.svg" /><img src="https://raw.githubusercontent.com/GustavoViti/gustavoviti/output/stats-light.svg" width="100%" alt="Estatísticas do GitHub: contribuições, sequência de dias e linguagens" /></picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GustavoViti/gustavoviti/output/github-snake-dark.svg" />

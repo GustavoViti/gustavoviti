@@ -4,10 +4,9 @@
 
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const OUT = join(dirname(fileURLToPath(import.meta.url)), 'assets');
-mkdirSync(OUT, { recursive: true });
 
 /* ------------------------------------------------------------------ */
 /* Dados                                                               */
@@ -48,12 +47,28 @@ const PROJECTS = [
   },
 ];
 
-const STACK = [
-  { title: 'Frontend', items: ['TypeScript', 'JavaScript', 'React', 'Vite', 'Tailwind', 'PWA', 'HTML', 'CSS'] },
-  { title: 'Backend e dados', items: ['Node.js', 'Express', 'REST', 'WebSocket', 'PostgreSQL', 'Row Level Security', 'Supabase', 'MySQL', 'MariaDB', 'Firebase'] },
-  { title: 'IA e automação', items: ['Gemini', 'Groq', 'Whisper local', 'Claude Code', 'Baileys', 'WhatsApp'] },
-  { title: 'Desktop, mobile e infra', items: ['Electron', 'Flutter', 'Dart', 'Web Push', 'Docker', 'Nginx', 'PM2', 'Linux', 'VPS', 'Vercel'] },
-];
+// Diagrama "Por baixo do capô": como os sistemas costumam ser montados.
+const ARCH = {
+  clients: [
+    { title: 'PWA instalável', hint: 'web e celular' },
+    { title: 'Desktop', hint: 'Electron + React' },
+    { title: 'Mobile', hint: 'Flutter' },
+  ],
+  api: {
+    title: 'API · Node.js',
+    rows: ['REST e WebSocket', 'Auth e permissões por perfil', 'Regras de negócio', 'Notificações · Web Push / FCM'],
+  },
+  data: {
+    title: 'PostgreSQL',
+    desc: 'Row Level Security: cada cliente só enxerga os próprios dados.',
+    hint: 'também Supabase · MySQL · MariaDB',
+  },
+  integrations: {
+    title: 'Integrações',
+    desc: 'WhatsApp via Baileys, IA com Gemini e Groq, transcrição local com Whisper.',
+  },
+  infra: ['VPS Linux', 'Docker', 'Nginx', 'PM2', 'Vercel', 'Render', 'Railway'],
+};
 
 const STEPS = [
   { title: 'Entendo o problema', desc: 'Como o processo funciona hoje e o que precisa mudar.' },
@@ -66,10 +81,10 @@ const STEPS = [
 /* Tema e utilitários                                                  */
 /* ------------------------------------------------------------------ */
 
-const SANS = `-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif`;
-const MONO = `ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace`;
+export const SANS = `-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif`;
+export const MONO = `ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace`;
 
-const THEMES = {
+export const THEMES = {
   dark: {
     bg: '#0a0f1e', surface: '#0f1830', stroke: '#1d3150', text: '#ffffff', body: '#c6d0e0',
     muted: '#7f8ea8', accent: '#2a9be2', soft: '#a9d8f8', chipBg: '#12233f', chipText: '#a9d8f8',
@@ -82,12 +97,12 @@ const THEMES = {
   },
 };
 const D = THEMES.dark;
-const GREEN = '#22c55e';
+export const GREEN = '#22c55e';
 
-const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+export const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
 /** Quebra o texto em linhas de até `max` caracteres. */
-function wrap(text, max) {
+export function wrap(text, max) {
   const lines = [];
   let line = '';
   for (const word of text.split(' ')) {
@@ -99,7 +114,7 @@ function wrap(text, max) {
 }
 
 /** Chips em mono, quebrando linha quando passa de maxW. Retorna { svg, height }. */
-function chips(x, y, items, t, { size = 14, maxW = Infinity, h = 30, gap = 8 } = {}) {
+export function chips(x, y, items, t, { size = 14, maxW = Infinity, h = 30, gap = 8 } = {}) {
   const cw = size * 0.62;
   let cx = x, cy = y, out = '';
   for (const item of items) {
@@ -112,7 +127,7 @@ function chips(x, y, items, t, { size = 14, maxW = Infinity, h = 30, gap = 8 } =
   return { svg: out, height: cy + h - y };
 }
 
-const svg = (w, h, body, title) =>
+export const svg = (w, h, body, title) =>
   `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="${esc(title)}"><title>${esc(title)}</title>${body}</svg>\n`;
 
 const write = (name, content) => { writeFileSync(join(OUT, name), content); console.log('✓', name); };
@@ -319,23 +334,64 @@ function process(t) {
 }
 
 /* ------------------------------------------------------------------ */
-/* Stack                                                               */
+/* Arquitetura                                                         */
 /* ------------------------------------------------------------------ */
 
-function stack(t) {
-  const W = 1200, colW = 285, gap = 20, pad = 22;
-  const x0 = (W - (colW * 4 + gap * 3)) / 2;
-  const cols = STACK.map((g, i) => {
-    const x = x0 + i * (colW + gap);
-    const c = chips(x + pad, 62, g.items, t, { size: 13, h: 28, maxW: colW - pad * 2 });
-    return { x, g, c };
+function architecture(t) {
+  const W = 1200, H = 404;
+  const label = (x, y, s) => `<text x="${x}" y="${y}" font-family="${MONO}" font-size="12" font-weight="700" letter-spacing="1.4" fill="${t.muted}">${esc(s)}</text>`;
+  const box = (x, y, w, h, hot) => `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="14" fill="${t.surface}" stroke="${t.accent}" stroke-opacity="${hot ? 0.55 : 0.22}" stroke-width="1.5"/>`;
+  const wire = (x1, y1, x2, y2, delay = 0) => `
+    <line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${t.accent}" stroke-width="2" stroke-dasharray="6 6" stroke-opacity=".7">
+      <animate attributeName="stroke-dashoffset" from="12" to="0" dur=".8s" begin="${delay}s" repeatCount="indefinite"/>
+    </line>
+    <circle cx="${x1}" cy="${y1}" r="3.5" fill="${t.accent}"/><circle cx="${x2}" cy="${y2}" r="3.5" fill="${t.accent}"/>`;
+
+  // clientes
+  const cx = 32, cw = 250, ch = 64, cys = [52, 132, 212];
+  let out = label(cx, 36, 'CLIENTES');
+  ARCH.clients.forEach((c, i) => {
+    const y = cys[i];
+    out += box(cx, y, cw, ch) +
+      `<text x="${cx + 20}" y="${y + 29}" font-family="${SANS}" font-size="18" font-weight="700" fill="${t.text}">${esc(c.title)}</text>` +
+      `<text x="${cx + 20}" y="${y + 49}" font-family="${MONO}" font-size="13" fill="${t.muted}">${esc(c.hint)}</text>`;
+    out += wire(cx + cw, y + ch / 2, 360, y + ch / 2, i * 0.2);
   });
-  const H = 62 + Math.max(...cols.map((c) => c.c.height)) + 26;
-  return svg(W, H, cols.map(({ x, g, c }) => `
-    <rect x="${x + 0.5}" y=".5" width="${colW - 1}" height="${H - 1}" rx="18" fill="${t.bg}" stroke="${t.stroke}"/>
-    <rect x="${x + pad}" y="28" width="8" height="8" rx="2" fill="${t.accent}"/>
-    <text x="${x + pad + 18}" y="37" font-family="${MONO}" font-size="13" font-weight="700" letter-spacing="1.2" fill="${t.text}">${esc(g.title.toUpperCase())}</text>
-    ${c.svg}`).join(''), 'Stack: ' + STACK.map((g) => `${g.title}: ${g.items.join(', ')}`).join('. '));
+
+  // API
+  const ax = 360, aw = 330, ay = 52, ah = 224;
+  out += label(ax, 36, 'BACKEND') + box(ax, ay, aw, ah, true) +
+    `<text x="${ax + 22}" y="${ay + 36}" font-family="${SANS}" font-size="20" font-weight="700" fill="${t.text}">${esc(ARCH.api.title)}</text>` +
+    `<line x1="${ax + 22}" y1="${ay + 52}" x2="${ax + aw - 22}" y2="${ay + 52}" stroke="${t.stroke}"/>`;
+  ARCH.api.rows.forEach((r, i) => {
+    const y = ay + 86 + i * 38;
+    out += `<rect x="${ax + 22}" y="${y - 10}" width="8" height="8" rx="2" fill="${t.accent}"/>` +
+      `<text x="${ax + 42}" y="${y}" font-family="${SANS}" font-size="16" fill="${t.body}">${esc(r)}</text>`;
+  });
+
+  // dados e integrações
+  const dx = 770, dw = 398;
+  const dy = 52, dh = 110, iy = 176, ih = 100;
+  out += label(dx, 36, 'DADOS E INTEGRAÇÕES');
+  out += box(dx, dy, dw, dh) +
+    `<text x="${dx + 22}" y="${dy + 32}" font-family="${SANS}" font-size="20" font-weight="700" fill="${t.text}">${esc(ARCH.data.title)}</text>` +
+    wrap(ARCH.data.desc, 46).map((l, i) => `<text x="${dx + 22}" y="${dy + 58 + i * 20}" font-family="${SANS}" font-size="15" fill="${t.body}">${esc(l)}</text>`).join('') +
+    `<text x="${dx + 22}" y="${dy + dh - 12}" font-family="${MONO}" font-size="12" fill="${t.muted}">${esc(ARCH.data.hint)}</text>`;
+  out += box(dx, iy, dw, ih) +
+    `<text x="${dx + 22}" y="${iy + 32}" font-family="${SANS}" font-size="20" font-weight="700" fill="${t.text}">${esc(ARCH.integrations.title)}</text>` +
+    wrap(ARCH.integrations.desc, 46).map((l, i) => `<text x="${dx + 22}" y="${iy + 58 + i * 20}" font-family="${SANS}" font-size="15" fill="${t.body}">${esc(l)}</text>`).join('');
+  out += wire(ax + aw, dy + dh / 2, dx, dy + dh / 2, 0.1) + wire(ax + aw, iy + ih / 2, dx, iy + ih / 2, 0.3);
+
+  // infra
+  const by = 304, bh = 72;
+  out += wire(ax + aw / 2, ay + ah, ax + aw / 2, by, 0.5);
+  out += box(32, by, 1136, bh) +
+    `<text x="56" y="${by + 42}" font-family="${MONO}" font-size="12" font-weight="700" letter-spacing="1.4" fill="${t.muted}">RODA EM</text>` +
+    chips(150, by + 22, ARCH.infra, t, { size: 13, h: 28 }).svg;
+
+  return svg(W, H, `<rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" rx="20" fill="${t.bg}" stroke="${t.stroke}"/>
+  <g transform="translate(0 0)">${out}</g>`,
+  'Arquitetura: clientes (PWA, desktop Electron, mobile Flutter) conectados a uma API Node.js com REST, WebSocket, autenticação e permissões; PostgreSQL com Row Level Security; integrações com WhatsApp e IA; rodando em VPS Linux com Docker, Nginx e PM2.');
 }
 
 /* ------------------------------------------------------------------ */
@@ -372,11 +428,15 @@ function cta() {
 
 /* ------------------------------------------------------------------ */
 
-write('header.svg', header());
-write('terminal.svg', terminal());
-write('cta.svg', cta());
-for (const [mode, t] of Object.entries(THEMES)) {
-  for (const p of PROJECTS) write(`${p.file}-${mode}.svg`, projectCard(p, t));
-  write(`process-${mode}.svg`, process(t));
-  write(`stack-${mode}.svg`, stack(t));
+// Só gera os arquivos quando rodado direto (stats.mjs importa os utilitários daqui).
+if (import.meta.url === pathToFileURL(globalThis.process.argv[1]).href) {
+  mkdirSync(OUT, { recursive: true });
+  write('header.svg', header());
+  write('terminal.svg', terminal());
+  write('cta.svg', cta());
+  for (const [mode, t] of Object.entries(THEMES)) {
+    for (const p of PROJECTS) write(`${p.file}-${mode}.svg`, projectCard(p, t));
+    write(`process-${mode}.svg`, process(t));
+    write(`architecture-${mode}.svg`, architecture(t));
+  }
 }
